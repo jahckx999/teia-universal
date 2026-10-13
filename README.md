@@ -2,8 +2,8 @@
 
 Enciclopédia espiritualista viva: 24 portais (da Fonte Criadora à Espiritualidade), todos interligados, escritos e atualizados automaticamente pelo Claude.
 
-**Site:** https://jahckx999.github.io/teia-universal/
-**Painel do editor:** https://jahckx999.github.io/teia-universal/painel/
+**Site:** https://jahckx999.github.io/tela-universal/
+**Painel do editor:** https://jahckx999.github.io/tela-universal/painel/
 
 ## Como governar (sem programar)
 
