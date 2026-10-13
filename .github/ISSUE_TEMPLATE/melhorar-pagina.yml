@@ -7,7 +7,7 @@ body:
     id: pagina
     attributes:
       label: Link ou nome da página
-      placeholder: https://jahckx999.github.io/tela-universal/deus/
+      placeholder: https://jahckx999.github.io/teia-universal/deus/
     validations:
       required: true
   - type: textarea
