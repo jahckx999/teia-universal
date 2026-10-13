@@ -1,0 +1,6 @@
+[
+  { "id": "primeiros-passos", "titulo": "Primeiros passos", "nivel": "iniciante", "descricao": "Da origem de tudo à prática diária: o fio condutor que liga a Fonte, Deus, a consciência e a vida espiritual.", "passos": ["fonte-criadora", "deus", "consciencia", "eu-superior", "espiritualidade"] },
+  { "id": "arquitetura-do-cosmos", "titulo": "A arquitetura do cosmos", "nivel": "intermediario", "descricao": "Como as tradições organizam a criação: hierarquias, alianças cósmicas, galáxias, universos e multiversos.", "passos": ["hierarquia-do-universo", "superconfederacao", "confederacao", "federacao", "galaxias", "universos", "multiversos"] },
+  { "id": "da-estrela-a-alma", "titulo": "Da estrela à alma", "nivel": "intermediario", "descricao": "Os astros, a origem estelar das almas e as civilizações descritas nas fontes canalizadas.", "passos": ["astros", "planetas", "origem-estelar", "racas-multidimensionais", "seres-multidimensionais", "plano-espiritual"] },
+  { "id": "tempo-dimensoes-memoria", "titulo": "Tempo, dimensões e memória", "nivel": "avancado", "descricao": "A estrutura da realidade: densidades, o tempo como dimensão, os Registros Akáshicos e as tecnologias da consciência.", "passos": ["dimensoes", "tempo-no-universo", "registros-akashicos", "fenomenos-do-universo", "tecnologias-multidimensionais"] }
+]

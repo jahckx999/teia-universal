@@ -1,0 +1,19 @@
+name: "✎ Editar ou melhorar página"
+description: Aprofundar, corrigir, reorganizar ou acrescentar algo a uma página.
+title: "Melhorar: "
+labels: ["melhorar"]
+body:
+  - type: input
+    id: pagina
+    attributes:
+      label: Link ou nome da página
+      placeholder: https://jahckx999.github.io/teia-universal/deus/
+    validations:
+      required: true
+  - type: textarea
+    id: pedido
+    attributes:
+      label: O que você quer mudar?
+      placeholder: "Ex.: acrescentar a visão da Umbanda; explicar melhor a Trindade; mais ilustrações; texto mais simples."
+    validations:
+      required: true

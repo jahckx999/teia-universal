@@ -1,0 +1,58 @@
+name: "＋ Adicionar tema ou subtema"
+description: O Claude pesquisa, escreve, ilustra e interliga uma nova página.
+title: "Novo tema: "
+labels: ["novo-tema"]
+body:
+  - type: input
+    id: tema
+    attributes:
+      label: Tema ou assunto
+      placeholder: "Ex.: Os Arcturianos, Merkabah, A Ressonância Schumann"
+    validations:
+      required: true
+  - type: dropdown
+    id: secao
+    attributes:
+      label: Em qual portal (seção) ele entra?
+      description: Se não souber, escolha "O Claude decide".
+      options:
+        - O Claude decide
+        - 01 · A Fonte Criadora do Universo
+        - 02 · Deus
+        - 03 · A Hierarquia do Universo
+        - 04 · Superconfederação
+        - 05 · Confederação
+        - 06 · Federação
+        - 07 · Seres
+        - 08 · Galáxias
+        - 09 · Multiversos
+        - 10 · Universos
+        - 11 · Astros
+        - 12 · Planetas
+        - 13 · Fenômenos do Universo
+        - 14 · As Dimensões
+        - 15 · O Eu Superior
+        - 16 · A Consciência
+        - 17 · Plano Espiritual
+        - 18 · A Origem Estelar
+        - 19 · Raças Multidimensionais
+        - 20 · O Tempo no Universo
+        - 21 · Registros Akáshicos
+        - 22 · Seres Multidimensionais
+        - 23 · Tecnologias Multidimensionais
+        - 24 · Espiritualidade
+        - "NOVO PORTAL (criar uma nova seção base)"
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Quando publicar?
+      options:
+        - No próximo ciclo (prioridade)
+        - Entrar na fila normal
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: O que não pode faltar? (opcional)
+      placeholder: "Autores, tradições, perguntas que a página deve responder, links de referência…"

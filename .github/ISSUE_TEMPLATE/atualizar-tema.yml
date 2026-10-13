@@ -1,0 +1,16 @@
+name: "↻ Atualizar tema agora"
+description: Revisão completa com novidades, mais profundidade e mais conexões.
+title: "Atualizar: "
+labels: ["atualizar", "urgente"]
+body:
+  - type: input
+    id: pagina
+    attributes:
+      label: Página ou portal a atualizar
+      placeholder: "Ex.: Registros Akáshicos (ou 'todas as páginas com mais de 3 meses')"
+    validations:
+      required: true
+  - type: textarea
+    id: foco
+    attributes:
+      label: Algum foco especial? (opcional)

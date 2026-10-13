@@ -1,0 +1,527 @@
+{
+ "_instrucoes": "Fila editorial. O robô publica o primeiro item 'pendente' (pedidos com prioridade 'alta' vêm antes). Ao publicar, muda status para 'publicado' e preenche 'publicadoEm'.",
+ "itens": [
+  {
+   "id": "hierarquia-do-universo",
+   "titulo": "A Hierarquia do Universo",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "superconfederacao",
+   "titulo": "Superconfederação",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "confederacao",
+   "titulo": "Confederação",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "federacao",
+   "titulo": "Federação",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "seres",
+   "titulo": "Seres",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "galaxias",
+   "titulo": "Galáxias",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "multiversos",
+   "titulo": "Multiversos",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "universos",
+   "titulo": "Universos",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "astros",
+   "titulo": "Astros",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "planetas",
+   "titulo": "Planetas",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "fenomenos-do-universo",
+   "titulo": "Fenômenos do Universo",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "dimensoes",
+   "titulo": "As Dimensões",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "eu-superior",
+   "titulo": "O Eu Superior",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "plano-espiritual",
+   "titulo": "Plano Espiritual",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "origem-estelar",
+   "titulo": "A Origem Estelar",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "racas-multidimensionais",
+   "titulo": "Raças Multidimensionais",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo",
+   "titulo": "O Tempo no Universo",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "registros-akashicos",
+   "titulo": "Registros Akáshicos",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "seres-multidimensionais",
+   "titulo": "Seres Multidimensionais",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "tecnologias-multidimensionais",
+   "titulo": "Tecnologias Multidimensionais",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "espiritualidade",
+   "titulo": "Espiritualidade",
+   "tipo": "secao",
+   "status": "pendente"
+  },
+  {
+   "id": "fonte-criadora/o-uno-e-o-infinito",
+   "titulo": "O Uno e o Infinito Inteligente",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "fonte-criadora/emanacao-e-criacao",
+   "titulo": "Emanação: como o Uno se torna muitos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "fonte-criadora/a-fonte-nas-tradicoes",
+   "titulo": "A Fonte nas tradições do mundo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "deus/deus-pessoal-e-impessoal",
+   "titulo": "Deus pessoal e Deus impessoal",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "deus/nomes-do-divino",
+   "titulo": "Os nomes do divino nas culturas",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "deus/deus-no-espiritismo",
+   "titulo": "Deus no Espiritismo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "hierarquia-do-universo/logos-cosmicos",
+   "titulo": "Os Logos: cósmico, galáctico, solar e planetário",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "hierarquia-do-universo/hierarquias-angelicas",
+   "titulo": "As hierarquias angélicas",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "hierarquia-do-universo/grande-fraternidade-branca",
+   "titulo": "A Grande Fraternidade Branca",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "superconfederacao/origem-do-conceito",
+   "titulo": "Superconfederação: origem do conceito",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "confederacao/confederacao-na-lei-do-um",
+   "titulo": "A Confederação na Lei do Um",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "confederacao/servico-ao-outro",
+   "titulo": "Serviço ao outro e serviço ao eu",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "federacao/federacao-galactica-da-luz",
+   "titulo": "Federação Galáctica da Luz",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "federacao/comando-ashtar",
+   "titulo": "O Comando Ashtar",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/anjos-e-arcanjos",
+   "titulo": "Anjos e arcanjos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/mestres-ascensos",
+   "titulo": "Mestres ascensos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/guias-e-mentores",
+   "titulo": "Guias e mentores espirituais",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/elementais",
+   "titulo": "Os elementais da natureza",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "galaxias/via-lactea",
+   "titulo": "A Via Láctea: nossa casa",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "galaxias/centro-galactico",
+   "titulo": "O Centro Galáctico",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "multiversos/multiverso-na-fisica",
+   "titulo": "O multiverso na física",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "multiversos/realidades-paralelas",
+   "titulo": "Realidades paralelas e linhas de tempo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "universos/big-bang-e-ciclos-de-criacao",
+   "titulo": "Big Bang e os ciclos de criação",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "universos/sete-superuniversos",
+   "titulo": "Os sete superuniversos (Livro de Urântia)",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "astros/sirius",
+   "titulo": "Sírius",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "astros/pleiades",
+   "titulo": "As Plêiades",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "astros/orion",
+   "titulo": "Órion",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "astros/arcturus",
+   "titulo": "Arcturus",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "astros/o-sol-logos-solar",
+   "titulo": "O Sol como Logos Solar",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "planetas/gaia-a-terra-viva",
+   "titulo": "Gaia: a Terra como ser vivo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "planetas/terra-escola-de-almas",
+   "titulo": "A Terra como escola de almas",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "fenomenos-do-universo/buracos-negros",
+   "titulo": "Buracos negros",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "fenomenos-do-universo/tempestades-solares",
+   "titulo": "Tempestades solares e consciência",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "fenomenos-do-universo/ressonancia-schumann",
+   "titulo": "A Ressonância Schumann",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "dimensoes/as-sete-densidades",
+   "titulo": "As sete densidades (Lei do Um)",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "dimensoes/terceira-quarta-quinta-dimensao",
+   "titulo": "3ª, 4ª e 5ª dimensões",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "dimensoes/planos-da-teosofia",
+   "titulo": "Os sete planos da Teosofia",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "eu-superior/atman-e-monada",
+   "titulo": "Atman e Mônada",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "eu-superior/contato-com-o-eu-superior",
+   "titulo": "Como as tradições descrevem o contato com o Eu Superior",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "consciencia/o-problema-dificil",
+   "titulo": "O 'problema difícil' da consciência",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "consciencia/niveis-de-consciencia",
+   "titulo": "Níveis e estados de consciência",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "consciencia/consciencia-coletiva",
+   "titulo": "Consciência coletiva",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "plano-espiritual/colonias-espirituais",
+   "titulo": "Colônias espirituais (Nosso Lar)",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "plano-espiritual/plano-astral",
+   "titulo": "O plano astral",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "plano-espiritual/vida-apos-a-morte",
+   "titulo": "A vida após a morte nas tradições",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "origem-estelar/sementes-estelares",
+   "titulo": "Sementes estelares (starseeds)",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "origem-estelar/almas-errantes",
+   "titulo": "Almas errantes (wanderers)",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "racas-multidimensionais/pleiadianos",
+   "titulo": "Pleiadianos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "racas-multidimensionais/sirianos",
+   "titulo": "Sirianos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "racas-multidimensionais/arcturianos",
+   "titulo": "Arcturianos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "racas-multidimensionais/andromedanos",
+   "titulo": "Andromedanos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/yugas",
+   "titulo": "As yugas e os grandes ciclos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/tempo-na-relatividade",
+   "titulo": "O tempo na relatividade",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/linhas-temporais",
+   "titulo": "Linhas temporais",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "registros-akashicos/origem-do-akasha",
+   "titulo": "Akasha: origem do conceito",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "registros-akashicos/edgar-cayce-e-os-registros",
+   "titulo": "Edgar Cayce e os Registros",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres-multidimensionais/complexos-de-memoria-social",
+   "titulo": "Complexos de memória social",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres-multidimensionais/seres-de-luz",
+   "titulo": "Seres de luz",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tecnologias-multidimensionais/merkabah",
+   "titulo": "Merkabah",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tecnologias-multidimensionais/geometria-sagrada",
+   "titulo": "Geometria sagrada",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tecnologias-multidimensionais/cristais",
+   "titulo": "Cristais e consciência",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tecnologias-multidimensionais/som-e-frequencia",
+   "titulo": "Som, frequência e cura",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "espiritualidade/meditacao",
+   "titulo": "Meditação: caminhos e técnicas",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "espiritualidade/oracao",
+   "titulo": "Oração nas tradições",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "espiritualidade/servico",
+   "titulo": "Serviço como caminho espiritual",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "espiritualidade/discernimento",
+   "titulo": "Discernimento espiritual",
+   "tipo": "subtema",
+   "status": "pendente"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+name: "⚕ Reportar problema"
+description: Algo quebrado, errado ou estranho no site? O Claude diagnostica e corrige.
+title: "Problema: "
+labels: ["problema"]
+body:
+  - type: input
+    id: pagina
+    attributes:
+      label: Onde acontece? (link da página)
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que está errado?
+      placeholder: "Ex.: o mapa não abre no celular; link quebrado; informação incorreta sobre…"
+    validations:
+      required: true

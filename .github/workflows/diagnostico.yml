@@ -1,0 +1,44 @@
+name: Diagnóstico
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 10 * * 1"   # toda segunda-feira
+permissions:
+  contents: read
+  issues: write
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Gerar e analisar
+        run: node scripts/build.mjs || true
+      - name: Verificar site publicado
+        id: online
+        run: |
+          URL=$(node -e "const c=require('./site.config.json');console.log(c.url+c.basePath+'/')")
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL" || echo 000)
+          echo "code=$CODE" >> $GITHUB_OUTPUT
+          echo "url=$URL" >> $GITHUB_OUTPUT
+      - name: Abrir ou atualizar issue de diagnóstico
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e '
+            const d=require("./_site/diagnostico.json");
+            const code="${{ steps.online.outputs.code }}";
+            let b="## Relatório automático\n\n";
+            b+=`- Site online: ${code==="200"?"✅":"❌ (HTTP "+code+")"} ${{ steps.online.outputs.url }}\n- Páginas: ${d.paginas} · Fila: ${d.fila}\n- Erros: ${d.erros.length} · Avisos: ${d.avisos.length}\n\n`;
+            if(d.erros.length) b+="### Erros\n"+d.erros.map(x=>"- "+x).join("\n")+"\n\n";
+            if(d.avisos.length) b+="### Avisos\n"+d.avisos.map(x=>"- "+x).join("\n")+"\n";
+            require("fs").writeFileSync("relatorio.md",b);
+            require("fs").writeFileSync("precisa.txt",(d.erros.length||d.avisos.length||code!=="200")?"sim":"nao");
+          '
+          if [ "$(cat precisa.txt)" = "sim" ]; then
+            N=$(gh issue list -R "$GITHUB_REPOSITORY" --label diagnostico --state open --json number -q '.[0].number')
+            if [ -n "$N" ]; then gh issue comment "$N" -R "$GITHUB_REPOSITORY" -F relatorio.md
+            else gh issue create -R "$GITHUB_REPOSITORY" --title "🩺 Diagnóstico automático: pontos a corrigir" --label diagnostico --label aprovado -F relatorio.md; fi
+          else echo "Tudo certo."; fi

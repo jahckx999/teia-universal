@@ -1,0 +1,18 @@
+name: "💡 Sugestão de leitor"
+description: Sugira um tema, uma melhoria ou uma correção para a Teia Universal.
+title: "Sugestão: "
+labels: ["sugestao-leitor"]
+body:
+  - type: markdown
+    attributes:
+      value: "Obrigado por ajudar a Teia a crescer! Sugestões são analisadas pelo editor antes de entrar no site."
+  - type: input
+    id: pagina
+    attributes:
+      label: Página relacionada (se houver)
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Sua sugestão
+    validations:
+      required: true
