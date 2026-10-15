@@ -1,0 +1,36 @@
+name: "✦ Pedido único (tudo em um)"
+description: Escreva o que quer — tema novo, melhoria, atualização, problema ou diagnóstico. O Claude entende e executa.
+title: "Pedido: "
+labels: ["pedido"]
+body:
+  - type: textarea
+    id: pedido
+    attributes:
+      label: O que você quer?
+      description: Escreva do seu jeito. O Claude identifica o tipo de pedido sozinho.
+      placeholder: "Ex.: criar página sobre os Arcturianos · acrescentar a visão da Umbanda em Deus · o mapa não abre no celular · checar se está tudo certo"
+    validations:
+      required: true
+  - type: input
+    id: pagina
+    attributes:
+      label: Página ou portal (opcional)
+      placeholder: "Ex.: 20 · O Tempo no Universo, ou o link da página"
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo (opcional)
+      options:
+        - O Claude decide
+        - Tema novo
+        - Editar ou melhorar página
+        - Atualizar tema
+        - Problema
+        - Diagnóstico
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: Quando?
+      options:
+        - Fila normal
+        - Urgente (próxima rodada)

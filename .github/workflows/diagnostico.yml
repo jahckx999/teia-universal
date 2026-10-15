@@ -1,6 +1,8 @@
 name: Diagnóstico
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
   schedule:
     - cron: "41 10 * * 1"   # toda segunda-feira
 permissions:
@@ -8,6 +10,7 @@ permissions:
   issues: write
 jobs:
   diagnosticar:
+    if: github.event_name != 'issues' || (github.event.issue.user.login == github.repository_owner && contains(github.event.issue.labels.*.name, 'diagnostico'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,6 +40,17 @@ jobs:
             require("fs").writeFileSync("relatorio.md",b);
             require("fs").writeFileSync("precisa.txt",(d.erros.length||d.avisos.length||code!=="200")?"sim":"nao");
           '
+          PEDIDO="${{ github.event.issue.number }}"
+          if [ -n "$PEDIDO" ]; then
+            gh issue comment "$PEDIDO" -R "$GITHUB_REPOSITORY" -F relatorio.md
+            if [ "$(cat precisa.txt)" = "sim" ]; then
+              gh issue comment "$PEDIDO" -R "$GITHUB_REPOSITORY" -b "Encontrei pontos a corrigir. O Claude resolve na próxima rodada e fecha este pedido."
+            else
+              gh issue edit "$PEDIDO" -R "$GITHUB_REPOSITORY" --add-label feito
+              gh issue close "$PEDIDO" -R "$GITHUB_REPOSITORY" -c "✅ Tudo certo! Diagnóstico concluído sem problemas."
+            fi
+            exit 0
+          fi
           if [ "$(cat precisa.txt)" = "sim" ]; then
             N=$(gh issue list -R "$GITHUB_REPOSITORY" --label diagnostico --state open --json number -q '.[0].number')
             if [ -n "$N" ]; then gh issue comment "$N" -R "$GITHUB_REPOSITORY" -F relatorio.md

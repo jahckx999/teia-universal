@@ -360,15 +360,49 @@ inst('/termos/', 'Termos de uso', 'Termos de uso do conteúdo da Teia Universal.
 const filaPend = fila.filter((f) => f.status !== 'publicado');
 const proximos = [...filaPend].sort((a, b) => (b.prioridade === 'alta') - (a.prioridade === 'alta')).slice(0, 8);
 escrever('painel/index.html', layout({ titulo: 'Painel do editor', descricao: 'Painel de controle da Teia Universal.', caminho: '/painel/', hue: 42, noindex: true, corpo: `
-<section class="simples painel"><h1>Painel do editor</h1><p class="lead">Tudo o que você precisa para governar a Teia. Os pedidos são processados automaticamente pelo Claude todos os dias — só os feitos pela sua conta (ou que você aprovar com o rótulo <code>aprovado</code>).</p>
-<div class="painel-acoes">
-<a class="acao" href="${ISSUE('novo-tema.yml')}" target="_blank" rel="noopener"><b>＋</b><span><strong>Adicionar tema ou subtema</strong>O Claude pesquisa, escreve, ilustra e interliga.</span></a>
-<a class="acao" href="${ISSUE('melhorar-pagina.yml')}" target="_blank" rel="noopener"><b>✎</b><span><strong>Editar ou melhorar página</strong>Aprofundar, corrigir, mudar tom, novas seções.</span></a>
-<a class="acao" href="${ISSUE('atualizar-tema.yml')}" target="_blank" rel="noopener"><b>↻</b><span><strong>Atualizar tema agora</strong>Revisão completa com novidades e mais conexões.</span></a>
-<a class="acao" href="${ISSUE('reportar-problema.yml')}" target="_blank" rel="noopener"><b>⚕</b><span><strong>Reportar problema</strong>Algo quebrado? O Claude diagnostica e corrige.</span></a>
-<a class="acao" href="https://github.com/${cfg.repo}/actions/workflows/diagnostico.yml" target="_blank" rel="noopener"><b>✚</b><span><strong>Rodar diagnóstico</strong>Clique em "Run workflow" para checar tudo agora.</span></a>
-<a class="acao" href="https://github.com/${cfg.repo}/issues" target="_blank" rel="noopener"><b>☰</b><span><strong>Ver pedidos</strong>Acompanhe o que está na fila e o que foi feito.</span></a>
+<section class="simples painel"><h1>Painel do editor</h1><p class="lead">Um único lugar para governar a Teia: escreva, envie e acompanhe. Os pedidos são processados automaticamente pelo Claude — só os feitos pela sua conta (ou aprovados com o rótulo <code>aprovado</code>).</p>
+<div class="central" id="central">
+<h2>✦ Central única de pedidos</h2>
+<p class="peq">Escreva o que quiser — tema novo, melhoria, atualização, problema ou diagnóstico. O painel entende o tipo sozinho, você só confere e envia.</p>
+<textarea id="c-texto" rows="4" placeholder="Ex.: criar página sobre os Arcturianos · acrescentar a visão da Umbanda na página Deus · o mapa não abre no celular · checar se está tudo certo"></textarea>
+<div class="c-linha">
+<input id="c-pagina" list="c-paginas" placeholder="Página ou portal (opcional)" autocomplete="off">
+<datalist id="c-paginas">${[...secoes.map((s, i) => `${String(i + 1).padStart(2, '0')} · ${s.titulo}`), ...publicadas.map((p) => p.meta.titulo)].filter((v, i, a) => a.indexOf(v) === i).map((v) => `<option value="${esc(v)}">`).join('')}</datalist>
+<label class="c-urg"><input type="checkbox" id="c-urgente"> Urgente</label>
 </div>
+<div class="c-tipos" id="c-tipos"></div>
+<p class="peq" id="c-dica">Comece a escrever e eu identifico o tipo.</p>
+<button class="btn" id="c-enviar" type="button" disabled>Enviar pedido ➜</button>
+</div>
+<div class="painel-box status-box"><div class="st-topo"><h2>Status dos pedidos</h2><button class="btn btn-sec st-at" id="st-at" type="button">↻ Atualizar</button></div>
+<div class="st-resumo" id="st-resumo"></div><ul class="st-lista" id="st-lista"><li class="peq">Carregando…</li></ul>
+<p class="peq">🕓 Na fila: aguarda a rodada diária (5:52) · ⏳ Em andamento: o Claude está trabalhando · ✅ Concluído: toque para ver o resultado. Diagnósticos rodam sozinhos em ~2 minutos. <a href="https://github.com/${cfg.repo}/issues?q=is%3Aissue" target="_blank" rel="noopener">Ver todos</a></p></div>
+<script>(()=>{const REPO='${cfg.repo}',PUB=${JSON.stringify(publicadas.map((p) => p.meta.titulo.toLowerCase()))};
+const T={diagnostico:{n:'✚ Diagnóstico',l:'diagnostico',d:'Checagem completa do site. Roda sozinho em ~2 min e o resultado aparece no status.',r:/diagn|checa|verific|tudo cert|sa[uú]de|auditor/},
+problema:{n:'⚕ Problema',l:'problema',d:'O Claude encontra a causa e corrige.',r:/quebr|erro|n[aã]o (abre|funciona|carrega|aparece)|bug|sumiu|lento|travad|torto|desconfigur/},
+atualizar:{n:'↻ Atualizar tema',l:'atualizar',d:'Revisão completa com novidades e mais conexões.',r:/atualiz|revis|novidade|recente/},
+melhorar:{n:'✎ Melhorar página',l:'melhorar',d:'Aprofunda, corrige ou muda o que você pediu na página.',r:/melhor|acrescent|corrig|mud[ae]|edit|aprofund|inclu|tir[ae]|remov|reescrev|simplific|amplie|ampliar|adicione na|coloque na|ilustra/},
+novo:{n:'＋ Tema novo',l:'novo-tema',d:'O Claude pesquisa, escreve, ilustra e interliga uma página nova.',r:/cri[ae]|nov[oa] (p[aá]gina|tema|subtema|portal)|p[aá]gina sobre|escrev|adicion|fal(e|ar) sobre|tema/}};
+const $=i=>document.getElementById(i),tx=$('c-texto'),pg=$('c-pagina'),bt=$('c-enviar');let manual=null,auto=null;
+function detectar(){const t=(tx.value+' ').toLowerCase(),p=pg.value.trim().toLowerCase();let k=null;
+for(const c of ['diagnostico','problema','atualizar','melhorar','novo'])if(T[c].r.test(t)){k=c;break}
+if(k==='novo'&&p&&PUB.some(x=>p.includes(x)||x.includes(p.replace(/^\d+ · /,''))))k='melhorar';
+if(!k&&t.trim().length>8)k=p?'melhorar':'novo';return k}
+function render(){auto=detectar();const k=manual||auto;$('c-tipos').innerHTML=Object.entries(T).map(([c,v])=>'<button type="button" data-k="'+c+'" class="chip'+(c===k?' on':'')+'">'+v.n+'</button>').join('');
+$('c-dica').textContent=k?(manual?'Você escolheu: ':'Entendi: ')+T[k].n.slice(2)+' — '+T[k].d:'Comece a escrever e eu identifico o tipo.';bt.disabled=!tx.value.trim()}
+$('c-tipos').onclick=e=>{const k=e.target.dataset.k;if(k){manual=manual===k?null:k;render()}};tx.oninput=pg.oninput=render;
+bt.onclick=()=>{const k=manual||auto,t=tx.value.trim(),labs=['pedido'];if(k)labs.push(T[k].l);if($('c-urgente').checked)labs.push('urgente');
+const titulo='Pedido: '+(k?T[k].n.slice(2)+' — ':'')+t.replace(/\s+/g,' ').slice(0,70);
+const q={template:'pedido.yml',title:titulo,pedido:t,pagina:pg.value.trim(),labels:labs.join(',')};
+window.open('https://github.com/'+REPO+'/issues/new?'+Object.entries(q).map(([a,b])=>a+'='+encodeURIComponent(b)).join('&'),'_blank','noopener');
+$('c-dica').textContent='Formulário aberto no GitHub: confira e toque em "Create". Depois acompanhe aqui no status.'};
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function carregar(){$('st-lista').innerHTML='<li class="peq">Carregando…</li>';fetch('https://api.github.com/repos/'+REPO+'/issues?state=all&per_page=30&sort=updated').then(r=>r.json()).then(a=>{
+a=a.filter(i=>!i.pull_request&&i.user&&(i.user.login===REPO.split('/')[0]||i.labels.some(l=>l.name==='aprovado')));const cnt={f:0,a:0,c:0};
+$('st-lista').innerHTML=a.slice(0,15).map(i=>{const L=i.labels.map(l=>l.name);const s=(i.state==='closed'||L.includes('feito'))?['✅','Concluído','c']:L.includes('em-andamento')?['⏳','Em andamento','a']:['🕓','Na fila','f'];cnt[s[2]]++;
+return '<li class="st-'+s[2]+'"><span class="st-ic">'+s[0]+'</span><a href="'+i.html_url+'" target="_blank" rel="noopener">'+esc(i.title)+'</a><span class="peq">'+s[1]+' · '+new Date(i.updated_at).toLocaleDateString('pt-BR')+(L.includes('urgente')?' · urgente':'')+'</span></li>'}).join('')||'<li class="peq">Nenhum pedido ainda.</li>';
+$('st-resumo').innerHTML='<span>🕓 <b>'+cnt.f+'</b> na fila</span><span>⏳ <b>'+cnt.a+'</b> em andamento</span><span>✅ <b>'+cnt.c+'</b> concluídos</span>'}).catch(()=>{$('st-lista').innerHTML='<li class="peq">Não consegui carregar agora. <a href="https://github.com/'+REPO+'/issues" target="_blank" rel="noopener">Abrir no GitHub</a></li>'})}
+$('st-at').onclick=carregar;carregar();render()})()</script>
 <div class="painel-grade">
 <div class="painel-box"><h2>Saúde do site</h2><div id="saude"><p class="peq">Carregando diagnóstico…</p></div></div>
 <div class="painel-box"><h2>Números</h2><ul class="nums"><li><b>${publicadas.length}</b>páginas publicadas</li><li><b>${filaPend.length}</b>na fila</li><li><b>${linksGrafo.length}</b>conexões</li><li><b>${termos.length}</b>termos no glossário</li><li><b>${secoes.filter((s) => paginas.get(s.id).preparacao).length}</b>portais em preparação</li><li><b>${publicadas.reduce((a, p) => a + p.palavras, 0).toLocaleString('pt-BR')}</b>palavras</li></ul></div>

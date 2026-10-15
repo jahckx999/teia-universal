@@ -295,3 +295,26 @@ a.prep{color:var(--tinta3)}
   .texto>p:first-of-type::first-letter{font-size:3em}
 }
 @media print{.topo,.rodape,.ceu,.acoes-leitor,.anuncio,.lateral,.conexoes,.quiz,.seq{display:none!important}body{background:#fff;color:#000}}
+/* central única */
+.central{background:var(--sup);border:1px solid var(--ouro);border-radius:16px;padding:6px 18px 18px;margin:24px 0 14px}
+.central h2{font-size:1.5rem!important;margin:.6em 0 .2em!important}
+.central textarea,.central input[type=text],.central #c-pagina{width:100%;box-sizing:border-box;background:rgba(0,0,0,.25);color:#fff;border:1px solid var(--linha);border-radius:12px;padding:12px;font:inherit;font-size:1rem}
+.central textarea:focus,.central #c-pagina:focus{outline:none;border-color:var(--ouro)}
+.c-linha{display:flex;gap:10px;align-items:center;margin:10px 0}
+.c-linha #c-pagina{flex:1;min-width:0}
+.c-urg{white-space:nowrap;font-size:.9rem;color:var(--tinta2);display:flex;gap:6px;align-items:center}
+.c-tipos{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.chip{background:transparent;color:var(--tinta2);border:1px solid var(--linha);border-radius:999px;padding:7px 13px;font:inherit;font-size:.86rem;cursor:pointer}
+.chip.on{background:linear-gradient(135deg,var(--ouro2),var(--ouro));color:#1b1405;border-color:transparent;font-weight:700}
+#c-enviar{border:0;cursor:pointer;margin-top:6px;font:inherit;font-weight:700}
+#c-enviar:disabled{opacity:.45;cursor:default}
+.status-box{margin-bottom:14px}
+.st-topo{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.st-at{border:0;cursor:pointer;font:inherit;font-size:.85rem;padding:7px 12px}
+.st-resumo{display:flex;flex-wrap:wrap;gap:16px;font-size:.9rem;color:var(--tinta2);margin:4px 0 8px}
+.st-resumo b{color:var(--ouro2)}
+.st-lista{list-style:none;padding:0;margin:0}
+.st-lista li{display:grid;grid-template-columns:28px 1fr;gap:0 8px;padding:9px 0;border-bottom:1px solid var(--linha)}
+.st-lista li .peq{grid-column:2}
+.st-ic{grid-row:span 2}
+@media(max-width:520px){.c-linha{flex-wrap:wrap}}
