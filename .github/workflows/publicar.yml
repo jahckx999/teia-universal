@@ -25,7 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for l in "novo-tema:e9c67e" "melhorar:b9a6ff" "atualizar:8fdcff" "problema:ff7878" "sugestao-leitor:8d89ad" "aprovado:6edc8c" "urgente:ff9f7a" "diagnostico:ffd59a" "feito:2ea043" "pedido:d4af37" "em-andamento:f0b429"; do
+          for l in "novo-tema:e9c67e" "melhorar:b9a6ff" "atualizar:8fdcff" "problema:ff7878" "sugestao-leitor:8d89ad" "aprovado:6edc8c" "urgente:ff9f7a" "diagnostico:ffd59a" "feito:2ea043" "pedido:d4af37" "em-andamento:f0b429" "lote:c9a0ff"; do
             gh label create "${l%%:*}" --color "${l##*:}" --force -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || true
           done
       - name: Gerar site e diagnosticar

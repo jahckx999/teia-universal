@@ -318,3 +318,6 @@ a.prep{color:var(--tinta3)}
 .st-lista li .peq{grid-column:2}
 .st-ic{grid-row:span 2}
 @media(max-width:520px){.c-linha{flex-wrap:wrap}}
+.c-lote{list-style:none;padding:0;margin:8px 0;display:grid;gap:8px}
+.c-lote li{display:flex;gap:10px;align-items:center;font-size:.92rem;color:var(--tinta2)}
+.c-lote .chip{flex:none;font-size:.8rem;padding:5px 10px}

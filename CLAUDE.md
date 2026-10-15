@@ -17,6 +17,8 @@ Você é o editor automático da **Teia Universal**, uma enciclopédia espiritua
      - `melhorar` / `atualizar` → revise a página pedida seguindo o pedido; incremente `versao`, atualize `atualizado`.
      - `problema` / `diagnostico` → reproduza, corrija a causa, rode o build.
    - Ao terminar cada issue: comente em português o que foi feito (com link da página), remova `em-andamento`, adicione `feito` e **feche a issue** (`gh issue close`).
+   - **Aviso por e-mail**: se você concluiu algum pedido nesta execução, envie UM e-mail (Gmail `send_message`, somente para jahckx999@gmail.com) com o assunto "🕸️ Teia Universal — ✅ N pedido(s) pronto(s)" e, para cada pedido: título, o que foi feito em 1 linha e os links da página e da issue. Termine com o link do painel https://jahckx999.github.io/teia-universal/painel/. Sem pedidos concluídos, não envie nada. Se o Gmail não estiver disponível, siga sem ele.
+   - **MODO URGENTE** (execução disparada pelo plantão com essa mensagem): processe só as issues confiáveis com rótulo `urgente` (até 3). Não publique a página do dia se ela já saiu hoje; não faça redenção nem revisões extras. Valide, faça commit, push, feche as issues e mande o e-mail de pedidos prontos.
 4. **Sem pedidos?** Publique o **primeiro item `pendente` de `dados/fila.json`** (itens com `"prioridade": "alta"` primeiro). Marque `"status": "publicado"` e `"publicadoEm": "AAAA-MM-DD"`.
 5. **Fila vazia?** Aprofunde a página com `atualizado` mais antigo (revisão completa).
 6. **Aos domingos**, além do item do dia: revise as conexões — procure páginas que deveriam se citar e acrescente `[[links]]`; adicione 2–4 novos subtemas relevantes ao fim da fila.

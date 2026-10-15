@@ -363,43 +363,50 @@ escrever('painel/index.html', layout({ titulo: 'Painel do editor', descricao: 'P
 <section class="simples painel"><h1>Painel do editor</h1><p class="lead">Um único lugar para governar a Teia: escreva, envie e acompanhe. Os pedidos são processados automaticamente pelo Claude — só os feitos pela sua conta (ou aprovados com o rótulo <code>aprovado</code>).</p>
 <div class="central" id="central">
 <h2>✦ Central única de pedidos</h2>
-<p class="peq">Escreva o que quiser — tema novo, melhoria, atualização, problema ou diagnóstico. O painel entende o tipo sozinho, você só confere e envia.</p>
-<textarea id="c-texto" rows="4" placeholder="Ex.: criar página sobre os Arcturianos · acrescentar a visão da Umbanda na página Deus · o mapa não abre no celular · checar se está tudo certo"></textarea>
+<p class="peq">Escreva o que quiser — tema novo, melhoria, atualização, problema ou diagnóstico. O painel entende o tipo sozinho. <b>Vários pedidos? Um por linha</b>, e todos vão de uma vez.</p>
+<textarea id="c-texto" rows="4" placeholder="Ex.: criar página sobre os Arcturianos&#10;acrescentar a visão da Umbanda na página Deus&#10;o mapa não abre no celular"></textarea>
 <div class="c-linha">
 <input id="c-pagina" list="c-paginas" placeholder="Página ou portal (opcional)" autocomplete="off">
 <datalist id="c-paginas">${[...secoes.map((s, i) => `${String(i + 1).padStart(2, '0')} · ${s.titulo}`), ...publicadas.map((p) => p.meta.titulo)].filter((v, i, a) => a.indexOf(v) === i).map((v) => `<option value="${esc(v)}">`).join('')}</datalist>
-<label class="c-urg"><input type="checkbox" id="c-urgente"> Urgente</label>
+<label class="c-urg" title="O plantão confere a cada 2 horas, das 7h às 23h"><input type="checkbox" id="c-urgente"> ⚡ Fazer agora</label>
 </div>
-<div class="c-tipos" id="c-tipos"></div>
+<div class="c-tipos" id="c-tipos"></div><ol class="c-lote" id="c-lote" hidden></ol>
 <p class="peq" id="c-dica">Comece a escrever e eu identifico o tipo.</p>
 <button class="btn" id="c-enviar" type="button" disabled>Enviar pedido ➜</button>
 </div>
 <div class="painel-box status-box"><div class="st-topo"><h2>Status dos pedidos</h2><button class="btn btn-sec st-at" id="st-at" type="button">↻ Atualizar</button></div>
 <div class="st-resumo" id="st-resumo"></div><ul class="st-lista" id="st-lista"><li class="peq">Carregando…</li></ul>
-<p class="peq">🕓 Na fila: aguarda a rodada diária (5:52) · ⏳ Em andamento: o Claude está trabalhando · ✅ Concluído: toque para ver o resultado. Diagnósticos rodam sozinhos em ~2 minutos. <a href="https://github.com/${cfg.repo}/issues?q=is%3Aissue" target="_blank" rel="noopener">Ver todos</a></p></div>
+<p class="peq">🕓 Na fila: aguarda a rodada diária (5:52) · ⚡ Fazer agora: o plantão pega em até 2h (7h–23h) · ⏳ Em andamento: o Claude está trabalhando · ✅ Concluído: você recebe um e-mail com o link. Diagnósticos rodam sozinhos em ~2 minutos. <a href="https://github.com/${cfg.repo}/issues?q=is%3Aissue" target="_blank" rel="noopener">Ver todos</a></p></div>
 <script>(()=>{const REPO='${cfg.repo}',PUB=${JSON.stringify(publicadas.map((p) => p.meta.titulo.toLowerCase()))};
 const T={diagnostico:{n:'✚ Diagnóstico',l:'diagnostico',d:'Checagem completa do site. Roda sozinho em ~2 min e o resultado aparece no status.',r:/diagn|checa|verific|tudo cert|sa[uú]de|auditor/},
 problema:{n:'⚕ Problema',l:'problema',d:'O Claude encontra a causa e corrige.',r:/quebr|erro|n[aã]o (abre|funciona|carrega|aparece)|bug|sumiu|lento|travad|torto|desconfigur/},
 atualizar:{n:'↻ Atualizar tema',l:'atualizar',d:'Revisão completa com novidades e mais conexões.',r:/atualiz|revis|novidade|recente/},
 melhorar:{n:'✎ Melhorar página',l:'melhorar',d:'Aprofunda, corrige ou muda o que você pediu na página.',r:/melhor|acrescent|corrig|mud[ae]|edit|aprofund|inclu|tir[ae]|remov|reescrev|simplific|amplie|ampliar|adicione na|coloque na|ilustra/},
 novo:{n:'＋ Tema novo',l:'novo-tema',d:'O Claude pesquisa, escreve, ilustra e interliga uma página nova.',r:/cri[ae]|nov[oa] (p[aá]gina|tema|subtema|portal)|p[aá]gina sobre|escrev|adicion|fal(e|ar) sobre|tema/}};
-const $=i=>document.getElementById(i),tx=$('c-texto'),pg=$('c-pagina'),bt=$('c-enviar');let manual=null,auto=null;
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),$=i=>document.getElementById(i),tx=$('c-texto'),pg=$('c-pagina'),bt=$('c-enviar');let manual=null,auto=null;
 function detectar(){const t=(tx.value+' ').toLowerCase(),p=pg.value.trim().toLowerCase();let k=null;
 for(const c of ['diagnostico','problema','atualizar','melhorar','novo'])if(T[c].r.test(t)){k=c;break}
 if(k==='novo'&&p&&PUB.some(x=>p.includes(x)||x.includes(p.replace(/^\d+ · /,''))))k='melhorar';
 if(!k&&t.trim().length>8)k=p?'melhorar':'novo';return k}
-function render(){auto=detectar();const k=manual||auto;$('c-tipos').innerHTML=Object.entries(T).map(([c,v])=>'<button type="button" data-k="'+c+'" class="chip'+(c===k?' on':'')+'">'+v.n+'</button>').join('');
-$('c-dica').textContent=k?(manual?'Você escolheu: ':'Entendi: ')+T[k].n.slice(2)+' — '+T[k].d:'Comece a escrever e eu identifico o tipo.';bt.disabled=!tx.value.trim()}
+const linhas=()=>tx.value.split('\\n').map(l=>l.trim()).filter(l=>l.length>2);let tiposLote={};
+function tipoDe(t){const x=(t+' ').toLowerCase();for(const c of ['diagnostico','problema','atualizar','melhorar','novo'])if(T[c].r.test(x))return c;return PUB.some(p=>x.includes(p))?'melhorar':'novo'}
+function render(){const L=linhas(),lote=L.length>1,ol=$('c-lote');bt.disabled=!L.length;
+if(lote){$('c-tipos').innerHTML='';ol.hidden=false;ol.innerHTML=L.map((l,i)=>{const k=tiposLote[l]||tipoDe(l);return '<li><button type="button" class="chip on" data-i="'+i+'" title="Toque para trocar o tipo">'+T[k].n+'</button><span>'+esc(l)+'</span></li>'}).join('');
+$('c-dica').textContent='Modo lote: '+L.length+' pedidos. Toque no tipo de um pedido para trocar. Cada um vira um pedido separado no status.';bt.textContent='Enviar '+L.length+' pedidos ➜';return}
+ol.hidden=true;bt.textContent='Enviar pedido ➜';auto=detectar();const k=manual||auto;$('c-tipos').innerHTML=Object.entries(T).map(([c,v])=>'<button type="button" data-k="'+c+'" class="chip'+(c===k?' on':'')+'">'+v.n+'</button>').join('');
+$('c-dica').textContent=k?(manual?'Você escolheu: ':'Entendi: ')+T[k].n.slice(2)+' — '+T[k].d:'Comece a escrever e eu identifico o tipo.'}
+$('c-lote').onclick=e=>{const i=e.target.dataset.i;if(i===undefined)return;const l=linhas()[i],ks=Object.keys(T),atual=tiposLote[l]||tipoDe(l);tiposLote[l]=ks[(ks.indexOf(atual)+1)%ks.length];render()};
 $('c-tipos').onclick=e=>{const k=e.target.dataset.k;if(k){manual=manual===k?null:k;render()}};tx.oninput=pg.oninput=render;
-bt.onclick=()=>{const k=manual||auto,t=tx.value.trim(),labs=['pedido'];if(k)labs.push(T[k].l);if($('c-urgente').checked)labs.push('urgente');
-const titulo='Pedido: '+(k?T[k].n.slice(2)+' — ':'')+t.replace(/\s+/g,' ').slice(0,70);
-const q={template:'pedido.yml',title:titulo,pedido:t,pagina:pg.value.trim(),labels:labs.join(',')};
+bt.onclick=()=>{const L=linhas(),urg=$('c-urgente').checked,labs=['pedido'];let titulo,texto;
+if(L.length>1){labs.push('lote');texto=L.map(l=>'- ['+T[tiposLote[l]||tipoDe(l)].l+'] '+l).join('\\n');titulo='Pedido em lote: '+L.length+' pedidos'}
+else{const k=manual||auto;if(k)labs.push(T[k].l);texto=tx.value.trim();titulo='Pedido: '+(k?T[k].n.slice(2)+' — ':'')+texto.replace(/\s+/g,' ').slice(0,70)}
+if(urg)labs.push('urgente');
+const q={template:'pedido.yml',title:titulo,pedido:texto,pagina:pg.value.trim(),labels:labs.join(',')};
 window.open('https://github.com/'+REPO+'/issues/new?'+Object.entries(q).map(([a,b])=>a+'='+encodeURIComponent(b)).join('&'),'_blank','noopener');
 $('c-dica').textContent='Formulário aberto no GitHub: confira e toque em "Create". Depois acompanhe aqui no status.'};
-const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function carregar(){$('st-lista').innerHTML='<li class="peq">Carregando…</li>';fetch('https://api.github.com/repos/'+REPO+'/issues?state=all&per_page=30&sort=updated').then(r=>r.json()).then(a=>{
-a=a.filter(i=>!i.pull_request&&i.user&&(i.user.login===REPO.split('/')[0]||i.labels.some(l=>l.name==='aprovado')));const cnt={f:0,a:0,c:0};
-$('st-lista').innerHTML=a.slice(0,15).map(i=>{const L=i.labels.map(l=>l.name);const s=(i.state==='closed'||L.includes('feito'))?['✅','Concluído','c']:L.includes('em-andamento')?['⏳','Em andamento','a']:['🕓','Na fila','f'];cnt[s[2]]++;
+a=a.filter(i=>!i.pull_request&&!i.labels.some(l=>l.name==='lote')&&i.user&&(i.user.login===REPO.split('/')[0]||i.labels.some(l=>l.name==='aprovado')));const cnt={f:0,a:0,c:0};
+$('st-lista').innerHTML=a.slice(0,15).map(i=>{const L=i.labels.map(l=>l.name);const s=(i.state==='closed'||L.includes('feito'))?['✅','Concluído','c']:L.includes('em-andamento')?['⏳','Em andamento','a']:L.includes('urgente')?['⚡','Na fila (agora)','f']:['🕓','Na fila','f'];cnt[s[2]]++;
 return '<li class="st-'+s[2]+'"><span class="st-ic">'+s[0]+'</span><a href="'+i.html_url+'" target="_blank" rel="noopener">'+esc(i.title)+'</a><span class="peq">'+s[1]+' · '+new Date(i.updated_at).toLocaleDateString('pt-BR')+(L.includes('urgente')?' · urgente':'')+'</span></li>'}).join('')||'<li class="peq">Nenhum pedido ainda.</li>';
 $('st-resumo').innerHTML='<span>🕓 <b>'+cnt.f+'</b> na fila</span><span>⏳ <b>'+cnt.a+'</b> em andamento</span><span>✅ <b>'+cnt.c+'</b> concluídos</span>'}).catch(()=>{$('st-lista').innerHTML='<li class="peq">Não consegui carregar agora. <a href="https://github.com/'+REPO+'/issues" target="_blank" rel="noopener">Abrir no GitHub</a></li>'})}
 $('st-at').onclick=carregar;carregar();render()})()</script>

@@ -1,0 +1,24 @@
+name: Pedido em lote
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  dividir:
+    # Só pedidos em lote feitos pelo dono do repositório
+    if: github.event.issue.user.login == github.repository_owner && contains(github.event.issue.labels.*.name, 'lote')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Dividir em pedidos separados
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CORPO: ${{ github.event.issue.body }}
+          NUM: ${{ github.event.issue.number }}
+          URGENTE: ${{ contains(github.event.issue.labels.*.name, 'urgente') }}
+        run: node scripts/lote.mjs
