@@ -12,7 +12,8 @@
    "id": "superconfederacao",
    "titulo": "Superconfederação",
    "tipo": "secao",
-   "status": "pendente"
+   "status": "publicado",
+   "publicadoEm": "2026-10-15"
   },
   {
    "id": "confederacao",
