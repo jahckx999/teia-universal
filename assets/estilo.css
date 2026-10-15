@@ -321,3 +321,5 @@ a.prep{color:var(--tinta3)}
 .c-lote{list-style:none;padding:0;margin:8px 0;display:grid;gap:8px}
 .c-lote li{display:flex;gap:10px;align-items:center;font-size:.92rem;color:var(--tinta2)}
 .c-lote .chip{flex:none;font-size:.8rem;padding:5px 10px}
+.st-desf{background:transparent;border:1px solid var(--linha);color:var(--ouro2);border-radius:999px;padding:2px 10px;font:inherit;font-size:.78rem;cursor:pointer}
+.st-desf:hover{border-color:var(--ouro)}.st-desf:disabled{opacity:.6;cursor:default}

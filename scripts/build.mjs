@@ -376,7 +376,7 @@ escrever('painel/index.html', layout({ titulo: 'Painel do editor', descricao: 'P
 </div>
 <div class="painel-box status-box"><div class="st-topo"><h2>Status dos pedidos</h2><button class="btn btn-sec st-at" id="st-at" type="button">↻ Atualizar</button></div>
 <div class="st-resumo" id="st-resumo"></div><ul class="st-lista" id="st-lista"><li class="peq">Carregando…</li></ul>
-<p class="peq">🕓 Na fila: aguarda a rodada diária (5:52) · ⚡ Fazer agora: o plantão pega em até 2h (7h–23h) · ⏳ Em andamento: o Claude está trabalhando · ✅ Concluído: você recebe um e-mail com o link. Diagnósticos rodam sozinhos em ~2 minutos. <a href="https://github.com/${cfg.repo}/issues?q=is%3Aissue" target="_blank" rel="noopener">Ver todos</a></p></div>
+<p class="peq">🕓 Na fila: aguarda a rodada diária (5:52) · ⚡ Fazer agora: o plantão pega em até 2h (7h–23h) · ⏳ Em andamento: o Claude está trabalhando · ✅ Concluído: você recebe um e-mail com o link · ↶ Desfazer: volta a página como estava antes do pedido, em ~2 minutos. Diagnósticos rodam sozinhos em ~2 minutos. <a href="https://github.com/${cfg.repo}/issues?q=is%3Aissue" target="_blank" rel="noopener">Ver todos</a></p></div>
 <script>(()=>{const REPO='${cfg.repo}',PUB=${JSON.stringify(publicadas.map((p) => p.meta.titulo.toLowerCase()))};
 const T={diagnostico:{n:'✚ Diagnóstico',l:'diagnostico',d:'Checagem completa do site. Roda sozinho em ~2 min e o resultado aparece no status.',r:/diagn|checa|verific|tudo cert|sa[uú]de|auditor/},
 problema:{n:'⚕ Problema',l:'problema',d:'O Claude encontra a causa e corrige.',r:/quebr|erro|n[aã]o (abre|funciona|carrega|aparece)|bug|sumiu|lento|travad|torto|desconfigur/},
@@ -406,9 +406,14 @@ window.open('https://github.com/'+REPO+'/issues/new?'+Object.entries(q).map(([a,
 $('c-dica').textContent='Formulário aberto no GitHub: confira e toque em "Create". Depois acompanhe aqui no status.'};
 function carregar(){$('st-lista').innerHTML='<li class="peq">Carregando…</li>';fetch('https://api.github.com/repos/'+REPO+'/issues?state=all&per_page=30&sort=updated').then(r=>r.json()).then(a=>{
 a=a.filter(i=>!i.pull_request&&!i.labels.some(l=>l.name==='lote')&&i.user&&(i.user.login===REPO.split('/')[0]||i.labels.some(l=>l.name==='aprovado')));const cnt={f:0,a:0,c:0};
-$('st-lista').innerHTML=a.slice(0,15).map(i=>{const L=i.labels.map(l=>l.name);const s=(i.state==='closed'||L.includes('feito'))?['✅','Concluído','c']:L.includes('em-andamento')?['⏳','Em andamento','a']:L.includes('urgente')?['⚡','Na fila (agora)','f']:['🕓','Na fila','f'];cnt[s[2]]++;
-return '<li class="st-'+s[2]+'"><span class="st-ic">'+s[0]+'</span><a href="'+i.html_url+'" target="_blank" rel="noopener">'+esc(i.title)+'</a><span class="peq">'+s[1]+' · '+new Date(i.updated_at).toLocaleDateString('pt-BR')+(L.includes('urgente')?' · urgente':'')+'</span></li>'}).join('')||'<li class="peq">Nenhum pedido ainda.</li>';
+$('st-lista').innerHTML=a.slice(0,15).map(i=>{const L=i.labels.map(l=>l.name);const s=L.includes('desfeito')?['↶','Desfeito','c']:(i.state==='closed'||L.includes('feito'))?['✅','Concluído','c']:L.includes('em-andamento')?['⏳','Em andamento','a']:L.includes('urgente')?['⚡','Na fila (agora)','f']:['🕓','Na fila','f'];cnt[s[2]]++;
+return '<li class="st-'+s[2]+'"><span class="st-ic">'+s[0]+'</span><a href="'+i.html_url+'" target="_blank" rel="noopener">'+esc(i.title)+'</a><span class="peq">'+s[1]+' · '+new Date(i.updated_at).toLocaleDateString('pt-BR')+(L.includes('urgente')?' · urgente':'')+(s[1]==='Concluído'&&!['diagnostico','desfazer'].some(x=>L.includes(x))?' · <button type="button" class="st-desf" data-n="'+i.number+'" data-t="'+esc(i.title)+'">↶ Desfazer</button>':'')+'</span></li>'}).join('')||'<li class="peq">Nenhum pedido ainda.</li>';
 $('st-resumo').innerHTML='<span>🕓 <b>'+cnt.f+'</b> na fila</span><span>⏳ <b>'+cnt.a+'</b> em andamento</span><span>✅ <b>'+cnt.c+'</b> concluídos</span>'}).catch(()=>{$('st-lista').innerHTML='<li class="peq">Não consegui carregar agora. <a href="https://github.com/'+REPO+'/issues" target="_blank" rel="noopener">Abrir no GitHub</a></li>'})}
+$('st-lista').onclick=e=>{const b=e.target.closest('.st-desf');if(!b)return;const n=b.dataset.n,t=b.dataset.t.replace(/^Pedido:\\s*/,'');
+if(!confirm('Desfazer o pedido #'+n+'?\\n\\n"'+t+'"\\n\\nA página volta para como estava antes desse pedido. Os outros pedidos não são afetados.'))return;
+const q={template:'pedido.yml',title:'Desfazer: pedido #'+n+' — '+t.slice(0,60),pedido:'Desfazer o pedido #'+n+' ('+t+')',labels:'pedido,desfazer'};
+window.open('https://github.com/'+REPO+'/issues/new?'+Object.entries(q).map(([a,v])=>a+'='+encodeURIComponent(v)).join('&'),'_blank','noopener');
+b.textContent='Abriu no GitHub: toque em Create';b.disabled=true};
 $('st-at').onclick=carregar;carregar();render()})()</script>
 <div class="painel-grade">
 <div class="painel-box"><h2>Saúde do site</h2><div id="saude"><p class="peq">Carregando diagnóstico…</p></div></div>
