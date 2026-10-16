@@ -19,7 +19,8 @@
    "id": "confederacao",
    "titulo": "Confederação",
    "tipo": "secao",
-   "status": "pendente"
+   "status": "publicado",
+   "publicadoEm": "2026-10-16"
   },
   {
    "id": "federacao",
