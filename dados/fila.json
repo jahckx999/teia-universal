@@ -26,13 +26,15 @@
    "id": "federacao",
    "titulo": "Federação",
    "tipo": "secao",
-   "status": "publicado", "publicadoEm": "2026-10-17"
+   "status": "publicado",
+   "publicadoEm": "2026-10-17"
   },
   {
    "id": "seres",
    "titulo": "Seres",
    "tipo": "secao",
-   "status": "pendente"
+   "status": "publicado",
+   "publicadoEm": "2026-10-18"
   },
   {
    "id": "galaxias",
@@ -523,6 +525,24 @@
   {
    "id": "espiritualidade/discernimento",
    "titulo": "Discernimento espiritual",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/anjo-da-guarda",
+   "titulo": "O anjo da guarda nas tradições",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/bodisatvas",
+   "titulo": "Bodisatvas: os seres da compaixão",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "seres/guias-da-umbanda",
+   "titulo": "Os guias da Umbanda: caboclos, pretos-velhos e erês",
    "tipo": "subtema",
    "status": "pendente"
   }
