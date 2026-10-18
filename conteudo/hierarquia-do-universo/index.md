@@ -56,7 +56,7 @@ Cada camada recebe da anterior e transmite à seguinte. Por isso, em muitas trad
 
 ## Os nove coros angélicos
 
-A hierarquia mais famosa do Ocidente foi descrita por volta do ano 500 por um autor sírio que escreveu sob o nome de Dionísio, o Areopagita — discípulo de São Paulo citado nos Atos dos Apóstolos. Por isso os estudiosos o chamam de **Pseudo-Dionísio**. Em *A Hierarquia Celeste*, ele organiza os anjos em **nove coros**, distribuídos em três tríades:
+A hierarquia mais famosa do Ocidente foi descrita por volta do ano 500 por um autor sírio que escreveu sob o nome de Dionísio, o Areopagita — discípulo de São Paulo citado nos Atos dos Apóstolos. Por isso os estudiosos o chamam de **Pseudo-Dionísio**. Em *A Hierarquia Celeste*, ele organiza os [[seres/anjos-e-arcanjos|anjos]] em **nove coros**, distribuídos em três tríades:
 
 | Tríade | Coros | Função tradicional |
 |---|---|---|
@@ -105,7 +105,7 @@ O **Espiritismo** dispensa anjos como seres criados à parte: para Allan Kardec,
 | Segunda — Bons espíritos | Quatro classes, dos benévolos aos espíritos superiores | Desejo do bem; ciência e moralidade em desenvolvimento |
 | Primeira — Espíritos puros | Uma classe | Perfeição alcançada; nenhuma influência da matéria |
 
-O que outras tradições chamam de anjos seriam, para o Espiritismo, espíritos puros que já percorreram a escala. Isso se conecta ao [[plano-espiritual|plano espiritual]] e à ideia de que toda hierarquia é, no fundo, evolução.
+O que outras tradições chamam de anjos seriam, para o Espiritismo, espíritos puros (veja [[seres|Seres]]) que já percorreram a escala. Isso se conecta ao [[plano-espiritual|plano espiritual]] e à ideia de que toda hierarquia é, no fundo, evolução.
 
 ## Éons e arcontes: a hierarquia gnóstica
 

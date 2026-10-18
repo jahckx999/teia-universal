@@ -120,4 +120,4 @@ Qual imagem de Deus você recebeu na infância? Ela mudou ao longo da vida? Muit
 
 ## Para continuar na Teia
 
-Subtemas em preparação: [[deus/deus-pessoal-e-impessoal|Deus pessoal e impessoal]], [[deus/nomes-do-divino|os nomes do divino]] e [[deus/deus-no-espiritismo|Deus no Espiritismo]]. Para ver como as tradições organizam os níveis entre Deus e o mundo, siga para [[hierarquia-do-universo|a Hierarquia do Universo]]; para levar tudo isso à prática, visite [[espiritualidade|Espiritualidade]].
+Subtemas em preparação: [[deus/deus-pessoal-e-impessoal|Deus pessoal e impessoal]], [[deus/nomes-do-divino|os nomes do divino]] e [[deus/deus-no-espiritismo|Deus no Espiritismo]]. Para ver como as tradições organizam os níveis entre Deus e o mundo, siga para [[hierarquia-do-universo|a Hierarquia do Universo]] e conheça os [[seres|seres espirituais]] descritos pelas tradições; para levar tudo isso à prática, visite [[espiritualidade|Espiritualidade]].
