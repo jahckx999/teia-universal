@@ -40,7 +40,8 @@
    "id": "galaxias",
    "titulo": "Galáxias",
    "tipo": "secao",
-   "status": "pendente"
+   "status": "publicado",
+   "publicadoEm": "2026-10-19"
   },
   {
    "id": "multiversos",
