@@ -51,6 +51,240 @@
    "publicadoEm": "2026-10-20"
   },
   {
+   "id": "tempo-no-universo",
+   "titulo": "O Tempo no Universo",
+   "tipo": "secao",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/eternidade",
+   "titulo": "Eternidade",
+   "tipo": "subtema",
+   "status": "publicado",
+   "prioridade": "alta",
+   "ordem": 1,
+   "pedido": 2,
+   "publicadoEm": "2026-10-20"
+  },
+  {
+   "id": "tempo-no-universo/eras",
+   "titulo": "Eras",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 2,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/milenios",
+   "titulo": "Milênios",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 3,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/seculos",
+   "titulo": "Séculos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 4,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/decadas",
+   "titulo": "Décadas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 5,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/ano-luz",
+   "titulo": "Ano-luz",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 6,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/anos",
+   "titulo": "Anos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 7,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/semestre",
+   "titulo": "Semestre",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 8,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/trimestre",
+   "titulo": "Trimestre",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 9,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/bimestre",
+   "titulo": "Bimestre",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 10,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/mes",
+   "titulo": "Mês",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 11,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/semanas",
+   "titulo": "Semanas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 12,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/dias",
+   "titulo": "Dias",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 13,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/horas",
+   "titulo": "Horas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 14,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/minutos",
+   "titulo": "Minutos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 15,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/segundos",
+   "titulo": "Segundos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 16,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/centesimos",
+   "titulo": "Centésimos de segundo",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 17,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/milesimos",
+   "titulo": "Milésimos de segundo",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 18,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/velocidade",
+   "titulo": "Velocidade",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 19,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/altura",
+   "titulo": "Altura",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 20,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/medidas",
+   "titulo": "Medidas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 21,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/escalas",
+   "titulo": "Escalas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 22,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/formulas",
+   "titulo": "Fórmulas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 23,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/veiculos",
+   "titulo": "Veículos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 24,
+   "pedido": 2
+  },
+  {
+   "id": "tempo-no-universo/espaco-tempo",
+   "titulo": "Espaço-tempo",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "ordem": 25,
+   "pedido": 2
+  },
+  {
    "id": "universos",
    "titulo": "Universos",
    "tipo": "secao",
@@ -101,12 +335,6 @@
   {
    "id": "racas-multidimensionais",
    "titulo": "Raças Multidimensionais",
-   "tipo": "secao",
-   "status": "pendente"
-  },
-  {
-   "id": "tempo-no-universo",
-   "titulo": "O Tempo no Universo",
    "tipo": "secao",
    "status": "pendente"
   },
