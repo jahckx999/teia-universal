@@ -775,6 +775,492 @@
    "titulo": "Os guias da Umbanda: caboclos, pretos-velhos e erês",
    "tipo": "subtema",
    "status": "pendente"
+  },
+  {
+   "id": "natureza",
+   "titulo": "A Natureza",
+   "tipo": "secao",
+   "status": "publicado",
+   "publicadoEm": "2026-10-20",
+   "prioridade": "alta",
+   "pedido": 3
+  },
+  {
+   "id": "natureza/elementos",
+   "titulo": "Os Elementos da Natureza",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 1
+  },
+  {
+   "id": "natureza/agua",
+   "titulo": "Água",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 2
+  },
+  {
+   "id": "natureza/terra",
+   "titulo": "Terra",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 3
+  },
+  {
+   "id": "natureza/fogo",
+   "titulo": "Fogo",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 4
+  },
+  {
+   "id": "natureza/ar",
+   "titulo": "Ar",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 5
+  },
+  {
+   "id": "natureza/eter",
+   "titulo": "Éter",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 6
+  },
+  {
+   "id": "natureza/climas",
+   "titulo": "Climas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 7
+  },
+  {
+   "id": "natureza/chuvas",
+   "titulo": "Chuvas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 8
+  },
+  {
+   "id": "natureza/neve",
+   "titulo": "Neve",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 9
+  },
+  {
+   "id": "natureza/sol",
+   "titulo": "O Sol e a vida na Terra",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 10
+  },
+  {
+   "id": "natureza/estacoes",
+   "titulo": "As estações do ano",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 11
+  },
+  {
+   "id": "natureza/fenomenos-naturais",
+   "titulo": "Fenômenos naturais",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 12
+  },
+  {
+   "id": "natureza/fenomenos-na-terra",
+   "titulo": "Fenômenos na Terra",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 13
+  },
+  {
+   "id": "natureza/fenomenos-no-ceu",
+   "titulo": "Fenômenos no céu",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 14
+  },
+  {
+   "id": "natureza/eclipses",
+   "titulo": "Eclipses",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 15
+  },
+  {
+   "id": "natureza/fenomenos-no-interior-da-terra",
+   "titulo": "Fenômenos no interior da Terra",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 16
+  },
+  {
+   "id": "natureza/cataclismos",
+   "titulo": "Cataclismos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 17
+  },
+  {
+   "id": "natureza/tsunamis",
+   "titulo": "Tsunamis",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 18
+  },
+  {
+   "id": "natureza/terremotos",
+   "titulo": "Terremotos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 19
+  },
+  {
+   "id": "natureza/maremotos",
+   "titulo": "Maremotos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 20
+  },
+  {
+   "id": "natureza/tornados",
+   "titulo": "Tornados",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 21
+  },
+  {
+   "id": "natureza/furacoes",
+   "titulo": "Furacões",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 22
+  },
+  {
+   "id": "natureza/ciclones",
+   "titulo": "Ciclones",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 23
+  },
+  {
+   "id": "natureza/el-nino",
+   "titulo": "El Niño",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 24
+  },
+  {
+   "id": "natureza/erupcoes-vulcanicas",
+   "titulo": "Erupções vulcânicas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 25
+  },
+  {
+   "id": "natureza/biomas",
+   "titulo": "Biomas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 26
+  },
+  {
+   "id": "natureza/florestas",
+   "titulo": "Florestas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 27
+  },
+  {
+   "id": "natureza/fauna",
+   "titulo": "Fauna",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 28
+  },
+  {
+   "id": "natureza/flora",
+   "titulo": "Flora",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 29
+  },
+  {
+   "id": "natureza/ceu",
+   "titulo": "O céu",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 30
+  },
+  {
+   "id": "natureza/oceanos",
+   "titulo": "Oceanos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 31
+  },
+  {
+   "id": "natureza/mares",
+   "titulo": "Mares",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 32
+  },
+  {
+   "id": "natureza/rios",
+   "titulo": "Rios",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 33
+  },
+  {
+   "id": "natureza/lagos",
+   "titulo": "Lagos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 34
+  },
+  {
+   "id": "natureza/lagoas",
+   "titulo": "Lagoas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 35
+  },
+  {
+   "id": "natureza/riachos",
+   "titulo": "Riachos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 36
+  },
+  {
+   "id": "natureza/cachoeiras",
+   "titulo": "Cachoeiras",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 37
+  },
+  {
+   "id": "natureza/cataratas",
+   "titulo": "Cataratas",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 38
+  },
+  {
+   "id": "natureza/continentes",
+   "titulo": "Continentes",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 39
+  },
+  {
+   "id": "natureza/ser-humano",
+   "titulo": "O ser humano",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 40
+  },
+  {
+   "id": "natureza/humanidades-anteriores",
+   "titulo": "Outras raças anteriores ao ser humano",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 41
+  },
+  {
+   "id": "natureza/antigas-civilizacoes",
+   "titulo": "Antigas civilizações",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 42
+  },
+  {
+   "id": "natureza/animais",
+   "titulo": "Animais",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 43
+  },
+  {
+   "id": "natureza/passaros",
+   "titulo": "Pássaros",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 44
+  },
+  {
+   "id": "natureza/insetos",
+   "titulo": "Insetos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 45
+  },
+  {
+   "id": "natureza/aves",
+   "titulo": "Aves",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 46
+  },
+  {
+   "id": "natureza/mamiferos",
+   "titulo": "Mamíferos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 47
+  },
+  {
+   "id": "natureza/repteis",
+   "titulo": "Répteis",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 48
+  },
+  {
+   "id": "natureza/animais-marinhos",
+   "titulo": "Animais marinhos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 49
+  },
+  {
+   "id": "natureza/animais-pre-historicos",
+   "titulo": "Animais pré-históricos",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 50
+  },
+  {
+   "id": "natureza/mundo-antigo",
+   "titulo": "O mundo antigo",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 51
+  },
+  {
+   "id": "natureza/outras-especies",
+   "titulo": "Outras espécies",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 52
+  },
+  {
+   "id": "natureza/mitologias",
+   "titulo": "Mitologias",
+   "tipo": "subtema",
+   "status": "pendente",
+   "prioridade": "alta",
+   "pedido": 3,
+   "ordem": 53
   }
  ]
 }

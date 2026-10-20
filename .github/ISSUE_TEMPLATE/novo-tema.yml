@@ -41,6 +41,7 @@ body:
         - 22 · Seres Multidimensionais
         - 23 · Tecnologias Multidimensionais
         - 24 · Espiritualidade
+        - 25 · A Natureza
         - "NOVO PORTAL (criar uma nova seção base)"
     validations:
       required: true
