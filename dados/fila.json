@@ -54,9 +54,10 @@
    "id": "tempo-no-universo",
    "titulo": "O Tempo no Universo",
    "tipo": "secao",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-21"
   },
   {
    "id": "tempo-no-universo/eternidade",
