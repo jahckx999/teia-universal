@@ -73,10 +73,11 @@
    "id": "tempo-no-universo/eras",
    "titulo": "Eras",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 2,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-22"
   },
   {
    "id": "tempo-no-universo/milenios",
