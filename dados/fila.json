@@ -83,10 +83,11 @@
    "id": "tempo-no-universo/milenios",
    "titulo": "Milênios",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 3,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-23"
   },
   {
    "id": "tempo-no-universo/seculos",
