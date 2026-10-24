@@ -93,10 +93,11 @@
    "id": "tempo-no-universo/seculos",
    "titulo": "Séculos",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 4,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-24"
   },
   {
    "id": "tempo-no-universo/decadas",
