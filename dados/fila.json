@@ -103,10 +103,11 @@
    "id": "tempo-no-universo/decadas",
    "titulo": "Décadas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 5,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-25"
   },
   {
    "id": "tempo-no-universo/ano-luz",
@@ -1265,6 +1266,24 @@
    "prioridade": "alta",
    "pedido": 3,
    "ordem": 53
+  },
+  {
+   "id": "tempo-no-universo/calendarios",
+   "titulo": "Calendários do mundo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/ciclos-planetarios",
+   "titulo": "Ciclos planetários",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/idades-da-vida",
+   "titulo": "As idades da vida",
+   "tipo": "subtema",
+   "status": "pendente"
   }
  ]
 }
