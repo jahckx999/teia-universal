@@ -121,7 +121,7 @@ Essas ideias se conectam a outros portais: a escala de densidades está em [[dim
 
 ## Ciclos, climas e fenômenos naturais
 
-A natureza é feita de **ritmos**: dia e noite, marés, fases da Lua, estações, chuvas e secas. As culturas antigas organizavam rituais e calendários em torno desses ciclos — os solstícios e equinócios, por exemplo, marcavam festas em povos do mundo inteiro.
+A natureza é feita de **ritmos**: dia e noite, marés, fases da Lua, estações, chuvas e secas. As culturas antigas organizavam rituais e calendários em torno desses ciclos — os solstícios e equinócios, por exemplo, marcavam festas em povos do mundo inteiro. Para ver como esses ritmos viraram medidas de tempo — dos dias às [[tempo-no-universo/decadas|décadas]] e às [[tempo-no-universo/eras|eras]] —, visite o portal [[tempo-no-universo|O Tempo no Universo]].
 
 Alguns fenômenos, porém, são **súbitos e poderosos**: terremotos, tsunamis, furacões, erupções vulcânicas. Muitas mitologias os explicaram como ira dos deuses ou castigo. Hoje entendemos suas causas físicas — o movimento das **placas tectônicas**, o calor dos oceanos, a circulação da atmosfera —, o que permite prever parte deles e salvar vidas.
 
