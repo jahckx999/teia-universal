@@ -113,10 +113,11 @@
    "id": "tempo-no-universo/ano-luz",
    "titulo": "Ano-luz",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 6,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-26"
   },
   {
    "id": "tempo-no-universo/anos",
