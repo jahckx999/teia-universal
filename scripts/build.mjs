@@ -112,6 +112,7 @@ const menuSecoes = secoes.map((s, i) => {
 }).join('');
 
 function layout({ titulo, descricao, caminho, corpo, hue = 260, noindex = false, jsonld = null, tipoOG = 'website', imagemOG = '' }) {
+  imagemOG = imagemOG || ABS('/assets/og.png');
   const tituloCompleto = caminho === '/' ? `${cfg.nome} — ${cfg.slogan}` : `${titulo} · ${cfg.nome}`;
   return `<!doctype html>
 <html lang="${cfg.idioma}">
@@ -122,7 +123,7 @@ function layout({ titulo, descricao, caminho, corpo, hue = 260, noindex = false,
 <link rel="canonical" href="${ABS(caminho)}">
 ${noindex ? '<meta name="robots" content="noindex">' : ''}
 ${cfg.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleSiteVerification)}">` : ''}
-<meta property="og:type" content="${tipoOG}"><meta property="og:title" content="${esc(titulo)}"><meta property="og:description" content="${esc(descricao)}"><meta property="og:url" content="${ABS(caminho)}"><meta property="og:site_name" content="${esc(cfg.nome)}"><meta property="og:locale" content="pt_BR">${imagemOG ? `<meta property="og:image" content="${imagemOG}">` : ''}
+<meta property="og:type" content="${tipoOG}"><meta property="og:title" content="${esc(titulo)}"><meta property="og:description" content="${esc(descricao)}"><meta property="og:url" content="${ABS(caminho)}"><meta property="og:site_name" content="${esc(cfg.nome)}"><meta property="og:locale" content="pt_BR"><meta property="og:image" content="${imagemOG}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07081a">
 <link rel="icon" href="${U('/assets/favicon.svg')}" type="image/svg+xml">
