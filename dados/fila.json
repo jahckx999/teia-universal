@@ -123,10 +123,11 @@
    "id": "tempo-no-universo/anos",
    "titulo": "Anos",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 7,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-27"
   },
   {
    "id": "tempo-no-universo/semestre",
