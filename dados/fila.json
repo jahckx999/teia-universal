@@ -143,10 +143,11 @@
    "id": "tempo-no-universo/trimestre",
    "titulo": "Trimestre",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 9,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-29"
   },
   {
    "id": "tempo-no-universo/bimestre",
