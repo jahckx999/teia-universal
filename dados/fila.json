@@ -133,10 +133,11 @@
    "id": "tempo-no-universo/semestre",
    "titulo": "Semestre",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 8,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-29"
   },
   {
    "id": "tempo-no-universo/trimestre",
