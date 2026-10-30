@@ -153,10 +153,11 @@
    "id": "tempo-no-universo/bimestre",
    "titulo": "Bimestre",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 10,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-30"
   },
   {
    "id": "tempo-no-universo/mes",
