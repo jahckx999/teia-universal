@@ -163,10 +163,11 @@
    "id": "tempo-no-universo/mes",
    "titulo": "Mês",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 11,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-10-31"
   },
   {
    "id": "tempo-no-universo/semanas",
