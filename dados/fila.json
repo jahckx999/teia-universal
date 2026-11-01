@@ -1291,6 +1291,30 @@
    "titulo": "As idades da vida",
    "tipo": "subtema",
    "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/shabat-e-dias-sagrados",
+   "titulo": "Shabat, domingo e sexta: os dias sagrados da semana",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/horas-planetarias",
+   "titulo": "As horas planetárias e a ordem caldaica",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/solsticios-e-equinocios",
+   "titulo": "Solstícios e equinócios nas tradições",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/lua",
+   "titulo": "A Lua: ciência, marés e tradições",
+   "tipo": "subtema",
+   "status": "pendente"
   }
  ]
 }
