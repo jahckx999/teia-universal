@@ -173,10 +173,11 @@
    "id": "tempo-no-universo/semanas",
    "titulo": "Semanas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 12,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-01"
   },
   {
    "id": "tempo-no-universo/dias",
