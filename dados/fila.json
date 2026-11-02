@@ -183,10 +183,11 @@
    "id": "tempo-no-universo/dias",
    "titulo": "Dias",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 13,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-02"
   },
   {
    "id": "tempo-no-universo/horas",
