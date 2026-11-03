@@ -193,10 +193,11 @@
    "id": "tempo-no-universo/horas",
    "titulo": "Horas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 14,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-03"
   },
   {
    "id": "tempo-no-universo/minutos",
