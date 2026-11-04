@@ -203,10 +203,10 @@
    "id": "tempo-no-universo/minutos",
    "titulo": "Minutos",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 15,
-   "pedido": 2
+   "pedido": 2, "publicadoEm": "2026-11-04"
   },
   {
    "id": "tempo-no-universo/segundos",
