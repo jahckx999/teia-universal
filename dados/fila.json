@@ -212,10 +212,10 @@
    "id": "tempo-no-universo/segundos",
    "titulo": "Segundos",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 16,
-   "pedido": 2
+   "pedido": 2, "publicadoEm": "2026-11-05"
   },
   {
    "id": "tempo-no-universo/centesimos",
