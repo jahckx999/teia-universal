@@ -221,10 +221,10 @@
    "id": "tempo-no-universo/centesimos",
    "titulo": "Centésimos de segundo",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 17,
-   "pedido": 2
+   "pedido": 2, "publicadoEm": "2026-11-06"
   },
   {
    "id": "tempo-no-universo/milesimos",
