@@ -230,10 +230,10 @@
    "id": "tempo-no-universo/milesimos",
    "titulo": "Milésimos de segundo",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 18,
-   "pedido": 2
+   "pedido": 2, "publicadoEm": "2026-11-07"
   },
   {
    "id": "tempo-no-universo/velocidade",
