@@ -4,7 +4,7 @@
   "resumo": "O que são as galáxias segundo a astronomia, como a Via Láctea foi vista pelos povos antigos e como o espiritualismo as interpreta como organismos de consciência.",
   "nivel": "iniciante",
   "criado": "2026-10-19",
-  "atualizado": "2026-10-19",
+  "atualizado": "2026-11-08",
   "versao": 1,
   "tradicoes": ["Astronomia", "Mitologia grega", "Tradição chinesa", "Hinduísmo", "Povos indígenas das Américas", "Teosofia", "Lei do Um", "Livro de Urântia", "Nova Era"],
   "palavrasChave": ["galáxias", "galáxias espiritualidade", "via láctea", "centro galáctico", "logos galáctico", "andrômeda", "tipos de galáxias"],
@@ -75,7 +75,7 @@ As galáxias também **mudam com o tempo**. Elas crescem engolindo vizinhas meno
 
 ## A nossa casa: a Via Láctea
 
-A Via Láctea é uma **espiral barrada** com cerca de **100 mil anos-luz** de diâmetro e algo entre **100 e 400 bilhões de estrelas**. O Sol fica num braço secundário, a cerca de **26 mil anos-luz do centro**, e leva aproximadamente **230 milhões de anos** para dar uma volta completa. Ou seja: desde que o Sol nasceu, há cerca de 4,6 bilhões de anos, ele deu umas vinte voltas na galáxia.
+A Via Láctea é uma **espiral barrada** com cerca de **100 mil [[tempo-no-universo/ano-luz|anos-luz]]** de diâmetro e algo entre **100 e 400 bilhões de estrelas**. O Sol fica num braço secundário, a cerca de **26 mil anos-luz do centro**, e leva aproximadamente **230 milhões de anos** para dar uma volta completa. Ou seja: desde que o Sol nasceu, há cerca de 4,6 bilhões de anos, ele deu umas vinte voltas na galáxia.
 
 No centro está **Sagitário A\***, um buraco negro com cerca de **4 milhões de vezes a massa do Sol**. Em **2022**, a colaboração **Event Horizon Telescope** divulgou a primeira imagem da "sombra" desse buraco negro — um anel de luz ao redor de uma região escura.
 
@@ -161,4 +161,4 @@ A luz de Andrômeda que chega aos seus olhos hoje partiu de lá há cerca de 2,5
 
 ## Para continuar na Teia
 
-Os subtemas deste portal estão em preparação: [[galaxias/via-lactea|A Via Láctea: nossa casa]] e [[galaxias/centro-galactico|O Centro Galáctico]]. Para o quadro maior, siga para [[universos|Universos]] e [[multiversos|Multiversos]]; para as estrelas que vivem dentro das galáxias, visite [[astros|Astros]]; para os fenômenos extremos, como buracos negros e supernovas, veja [[fenomenos-do-universo|Fenômenos do Universo]]. As alianças que, segundo fontes canalizadas, atuariam em escala galáctica estão em [[federacao|Federação]] e [[confederacao|Confederação]]; e a ideia de que a humanidade tem raízes nas estrelas aparece em [[origem-estelar|A Origem Estelar]].
+Os subtemas deste portal estão em preparação: [[galaxias/via-lactea|A Via Láctea: nossa casa]] e [[galaxias/centro-galactico|O Centro Galáctico]]. Para o quadro maior, siga para [[universos|Universos]] e [[multiversos|Multiversos]]; para as estrelas que vivem dentro das galáxias, visite [[astros|Astros]]; para os fenômenos extremos, como buracos negros e supernovas, veja [[fenomenos-do-universo|Fenômenos do Universo]]. As alianças que, segundo fontes canalizadas, atuariam em escala galáctica estão em [[federacao|Federação]] e [[confederacao|Confederação]]; e a ideia de que a humanidade tem raízes nas estrelas aparece em [[origem-estelar|A Origem Estelar]]. Para entender a medida das distâncias cósmicas, veja [[tempo-no-universo/ano-luz|Ano-luz]]; para a rapidez com que o Sol viaja pela galáxia, [[tempo-no-universo/velocidade|Velocidade]].

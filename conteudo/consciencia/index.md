@@ -4,7 +4,7 @@
   "resumo": "O maior mistério da ciência e o centro de quase toda espiritualidade: o que é a consciência para a neurociência, a filosofia e as tradições que a veem como o tecido do universo.",
   "nivel": "intermediario",
   "criado": "2026-10-13",
-  "atualizado": "2026-10-13",
+  "atualizado": "2026-11-08",
   "versao": 1,
   "tradicoes": ["Neurociência", "Filosofia da mente", "Vedanta", "Budismo", "Lei do Um", "Espiritismo", "Psicologia junguiana"],
   "palavrasChave": ["consciência", "problema difícil", "panpsiquismo", "turiya", "estados de consciência", "consciência coletiva", "inconsciente coletivo", "mente"],
@@ -134,4 +134,4 @@ Desconfie de quem promete "ativar" níveis de consciência em troca de pagamento
 
 ## Para continuar na Teia
 
-Subtemas em preparação aprofundarão [[consciencia/o-problema-dificil|o problema difícil]], [[consciencia/niveis-de-consciencia|os níveis e estados de consciência]] e [[consciencia/consciencia-coletiva|a consciência coletiva]]. Para ver como as tradições descrevem a parte mais ampla de nós, siga para [[eu-superior|O Eu Superior]]; para entender os "andares" da consciência, visite [[dimensoes|As Dimensões]].
+Subtemas em preparação aprofundarão [[consciencia/o-problema-dificil|o problema difícil]], [[consciencia/niveis-de-consciencia|os níveis e estados de consciência]] e [[consciencia/consciencia-coletiva|a consciência coletiva]]. Para ver como as tradições descrevem a parte mais ampla de nós, siga para [[eu-superior|O Eu Superior]]; para entender os "andares" da consciência, visite [[dimensoes|As Dimensões]]. Para a ideia, comum aos místicos, de uma consciência além do tempo, leia [[tempo-no-universo/eternidade|Eternidade]]; para o divino como origem de tudo, [[deus|Deus]]; e para o contraste entre a "velocidade do pensamento" das tradições e a dos neurônios, [[tempo-no-universo/velocidade|Velocidade]].
