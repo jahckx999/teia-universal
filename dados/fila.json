@@ -206,7 +206,8 @@
    "status": "publicado",
    "prioridade": "alta",
    "ordem": 15,
-   "pedido": 2, "publicadoEm": "2026-11-04"
+   "pedido": 2,
+   "publicadoEm": "2026-11-04"
   },
   {
    "id": "tempo-no-universo/segundos",
@@ -215,7 +216,8 @@
    "status": "publicado",
    "prioridade": "alta",
    "ordem": 16,
-   "pedido": 2, "publicadoEm": "2026-11-05"
+   "pedido": 2,
+   "publicadoEm": "2026-11-05"
   },
   {
    "id": "tempo-no-universo/centesimos",
@@ -224,7 +226,8 @@
    "status": "publicado",
    "prioridade": "alta",
    "ordem": 17,
-   "pedido": 2, "publicadoEm": "2026-11-06"
+   "pedido": 2,
+   "publicadoEm": "2026-11-06"
   },
   {
    "id": "tempo-no-universo/milesimos",
@@ -233,16 +236,18 @@
    "status": "publicado",
    "prioridade": "alta",
    "ordem": 18,
-   "pedido": 2, "publicadoEm": "2026-11-07"
+   "pedido": 2,
+   "publicadoEm": "2026-11-07"
   },
   {
    "id": "tempo-no-universo/velocidade",
    "titulo": "Velocidade",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 19,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-08"
   },
   {
    "id": "tempo-no-universo/altura",
@@ -1315,6 +1320,24 @@
   {
    "id": "natureza/lua",
    "titulo": "A Lua: ciência, marés e tradições",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "tempo-no-universo/relogios-atomicos",
+   "titulo": "Relógios atômicos: como o mundo mede o tempo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "galaxias/andromeda",
+   "titulo": "Andrômeda: a galáxia vizinha",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/ritmos-circadianos",
+   "titulo": "O relógio do corpo: ritmos circadianos",
    "tipo": "subtema",
    "status": "pendente"
   }
