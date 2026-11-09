@@ -253,7 +253,8 @@
    "id": "tempo-no-universo/altura",
    "titulo": "Altura",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
+   "publicadoEm": "2026-11-09",
    "prioridade": "alta",
    "ordem": 20,
    "pedido": 2
