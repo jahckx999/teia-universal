@@ -263,10 +263,11 @@
    "id": "tempo-no-universo/medidas",
    "titulo": "Medidas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 21,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-10"
   },
   {
    "id": "tempo-no-universo/escalas",
