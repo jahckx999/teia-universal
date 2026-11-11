@@ -273,10 +273,11 @@
    "id": "tempo-no-universo/escalas",
    "titulo": "Escalas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 22,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-11"
   },
   {
    "id": "tempo-no-universo/formulas",
