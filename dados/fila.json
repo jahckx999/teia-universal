@@ -283,10 +283,11 @@
    "id": "tempo-no-universo/formulas",
    "titulo": "Fórmulas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 23,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-12"
   },
   {
    "id": "tempo-no-universo/veiculos",
