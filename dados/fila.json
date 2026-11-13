@@ -293,7 +293,8 @@
    "id": "tempo-no-universo/veiculos",
    "titulo": "Veículos",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
+   "publicadoEm": "2026-11-13",
    "prioridade": "alta",
    "ordem": 24,
    "pedido": 2
