@@ -303,10 +303,11 @@
    "id": "tempo-no-universo/espaco-tempo",
    "titulo": "Espaço-tempo",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "ordem": 25,
-   "pedido": 2
+   "pedido": 2,
+   "publicadoEm": "2026-11-14"
   },
   {
    "id": "universos",
