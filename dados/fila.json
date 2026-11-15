@@ -814,10 +814,11 @@
    "id": "natureza/elementos",
    "titulo": "Os Elementos da Natureza",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 1
+   "ordem": 1,
+   "publicadoEm": "2026-11-15"
   },
   {
    "id": "natureza/agua",
@@ -1344,6 +1345,24 @@
   {
    "id": "natureza/ritmos-circadianos",
    "titulo": "O relógio do corpo: ritmos circadianos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/plasma",
+   "titulo": "Plasma: o quarto estado da matéria",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/alquimia",
+   "titulo": "Alquimia: dos elementos à transformação interior",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/ayurveda-e-doshas",
+   "titulo": "Ayurveda e os três doshas",
    "tipo": "subtema",
    "status": "pendente"
   }

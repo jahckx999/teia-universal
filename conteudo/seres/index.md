@@ -97,7 +97,7 @@ Muitas tradições propõem um gesto simples: antes de dormir, agradecer pela pr
 
 A crença em espíritos da natureza é provavelmente uma das mais antigas da humanidade: povos de todos os continentes falaram de seres que habitam montanhas, rios, árvores e o fogo. No Brasil, o folclore guarda o **Curupira**, protetor das matas, e a **Iara**, das águas.
 
-No Ocidente, a forma mais conhecida dessa ideia vem do médico e alquimista suíço **Paracelso** (1493–1541). Em um livro publicado após sua morte, em 1566 — o *Livro sobre ninfas, silfos, pigmeus e salamandras e sobre os outros espíritos* —, ele associou cada um dos quatro elementos clássicos a um tipo de ser:
+No Ocidente, a forma mais conhecida dessa ideia vem do médico e alquimista suíço **Paracelso** (1493–1541). Em um livro publicado após sua morte, em 1566 — o *Livro sobre ninfas, silfos, pigmeus e salamandras e sobre os outros espíritos* —, ele associou cada um dos [[natureza/elementos|quatro elementos clássicos]] a um tipo de ser:
 
 | Elemento | Elemental | Imagem tradicional |
 |---|---|---|
