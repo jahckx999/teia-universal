@@ -824,10 +824,11 @@
    "id": "natureza/agua",
    "titulo": "Água",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 2
+   "ordem": 2,
+   "publicadoEm": "2026-11-16"
   },
   {
    "id": "natureza/terra",
