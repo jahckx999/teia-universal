@@ -834,10 +834,11 @@
    "id": "natureza/terra",
    "titulo": "Terra",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 3
+   "ordem": 3,
+   "publicadoEm": "2026-11-17"
   },
   {
    "id": "natureza/fogo",
