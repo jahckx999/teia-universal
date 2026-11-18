@@ -844,10 +844,11 @@
    "id": "natureza/fogo",
    "titulo": "Fogo",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 4
+   "ordem": 4,
+   "publicadoEm": "2026-11-18"
   },
   {
    "id": "natureza/ar",
