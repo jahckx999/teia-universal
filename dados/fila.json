@@ -854,10 +854,11 @@
    "id": "natureza/ar",
    "titulo": "Ar",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 5
+   "ordem": 5,
+   "publicadoEm": "2026-11-19"
   },
   {
    "id": "natureza/eter",
