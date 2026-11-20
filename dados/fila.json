@@ -864,10 +864,11 @@
    "id": "natureza/eter",
    "titulo": "Éter",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 6
+   "ordem": 6,
+   "publicadoEm": "2026-11-20"
   },
   {
    "id": "natureza/climas",
