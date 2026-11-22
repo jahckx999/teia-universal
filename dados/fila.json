@@ -884,10 +884,11 @@
    "id": "natureza/chuvas",
    "titulo": "Chuvas",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 8
+   "ordem": 8,
+   "publicadoEm": "2026-11-22"
   },
   {
    "id": "natureza/neve",
@@ -1369,6 +1370,30 @@
   {
    "id": "natureza/ayurveda-e-doshas",
    "titulo": "Ayurveda e os três doshas",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/nuvens",
+   "titulo": "Nuvens: tipos, formação e simbolismo",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/arco-iris",
+   "titulo": "Arco-íris: luz, física e mitos",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/raios-e-trovoes",
+   "titulo": "Raios e trovões",
+   "tipo": "subtema",
+   "status": "pendente"
+  },
+  {
+   "id": "natureza/secas",
+   "titulo": "Secas: ciência, sertão e resiliência",
    "tipo": "subtema",
    "status": "pendente"
   }

@@ -122,7 +122,7 @@ Circulam produtos e cursos que prometem curar doenças com "aterramento" (*groun
 1. Fique de pé ou sente-se com os pés apoiados no chão. Se puder, faça isso descalço, na grama ou na areia.
 2. Feche os olhos e sinta o peso do corpo sendo sustentado. Você não precisa se segurar: o chão faz isso.
 3. Respire devagar e imagine raízes descendo dos pés até o solo.
-4. Pense em um alimento que você comeu hoje e em todo o caminho dele: semente, solo, chuva, sol, colheita.
+4. Pense em um alimento que você comeu hoje e em todo o caminho dele: semente, solo, [[natureza/chuvas|chuva]], sol, colheita.
 5. Agradeça em silêncio, do seu jeito, e abra os olhos.
 :::
 
