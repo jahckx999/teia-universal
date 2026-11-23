@@ -894,10 +894,11 @@
    "id": "natureza/neve",
    "titulo": "Neve",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 9
+   "ordem": 9,
+   "publicadoEm": "2026-11-23"
   },
   {
    "id": "natureza/sol",
