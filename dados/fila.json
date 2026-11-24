@@ -904,10 +904,11 @@
    "id": "natureza/sol",
    "titulo": "O Sol e a vida na Terra",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 10
+   "ordem": 10,
+   "publicadoEm": "2026-11-24"
   },
   {
    "id": "natureza/estacoes",
