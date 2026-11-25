@@ -914,10 +914,11 @@
    "id": "natureza/estacoes",
    "titulo": "As estações do ano",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 11
+   "ordem": 11,
+   "publicadoEm": "2026-11-25"
   },
   {
    "id": "natureza/fenomenos-naturais",
