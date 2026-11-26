@@ -924,7 +924,8 @@
    "id": "natureza/fenomenos-naturais",
    "titulo": "Fenômenos naturais",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
+   "publicadoEm": "2026-11-26",
    "prioridade": "alta",
    "pedido": 3,
    "ordem": 12
