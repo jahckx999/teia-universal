@@ -934,10 +934,11 @@
    "id": "natureza/fenomenos-na-terra",
    "titulo": "Fenômenos na Terra",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 13
+   "ordem": 13,
+   "publicadoEm": "2026-11-27"
   },
   {
    "id": "natureza/fenomenos-no-ceu",
