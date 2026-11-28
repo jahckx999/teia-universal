@@ -944,10 +944,11 @@
    "id": "natureza/fenomenos-no-ceu",
    "titulo": "Fenômenos no céu",
    "tipo": "subtema",
-   "status": "pendente",
+   "status": "publicado",
    "prioridade": "alta",
    "pedido": 3,
-   "ordem": 14
+   "ordem": 14,
+   "publicadoEm": "2026-11-28"
   },
   {
    "id": "natureza/eclipses",
